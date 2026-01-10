@@ -1,0 +1,218 @@
+// Add on Font ------------------------------------------------------------ //
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+// Normalize ------------------------------------------------------------ //
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+// Styler ------------------------------------------------------------ //
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: max(6px, 0.52083333vw);
+}
+
+html body {
+  font-family: "Pretendard", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  height: auto;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+span,
+img {
+  display: block;
+}
+// Variable ------------------------------------------------------------ //
+:root {
+  --margin-grid-system: 0 14rem;
+  --maxWidth-grid-system: 164rem;
+  --minWidth-block-system: 344px;
+  --minHeight--block-system: 100dvh;
+  --primary-color: rgba(50, 166, 255, 1);
+  --main-color-gray: rgba(18, 18, 18, 1);
+  --color-black: #000;
+  --color-white: #fff;
+}
+// main ------------------------------------------------------------ //
+main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  min-width: var(--minWidth-block-system);
+  // sec-1 ------------------------------------------------------------ //
+  .sec-1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: var(--minHeight--block-system);
+
+    .text-container {
+      color: var(--color-white);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: var(--margin-grid-system);
+      display: flex;
+      flex-direction: column;
+      gap: 12rem;
+      z-index: 2;
+
+      .initial-wrppaer {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        h1 {
+          font-weight: 600;
+          font-size: 3.6rem;
+        }
+
+        span {
+          font-weight: 600;
+          font-size: 2rem;
+        }
+      }
+
+      .logo-box {
+        width: 51rem;
+        height: 14.6rem;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .tools-box {
+        display: flex;
+        gap: 1.6rem;
+        margin-top: 9.6rem;
+
+        .tools-wrapper {
+          width: 4rem;
+          height: 4rem;
+          box-sizing: border-box;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .bg-container {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      box-sizing: border-box;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// sec-2 ------------------------------------------------------------ //
+.sec-2 {
+  width: 100%;
+  height: 100%;
+  min-height: var(--minHeight--block-system);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+
+    h3 {
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 3.2rem;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+}
