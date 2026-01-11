@@ -133,16 +133,16 @@ main .sec-1 .text-container {
   gap: 12rem;
   z-index: 2;
 }
-main .sec-1 .text-container .initial-wrppaer {
+main .sec-1 .text-container .title-wrppaer {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
-main .sec-1 .text-container .initial-wrppaer h1 {
+main .sec-1 .text-container .title-wrppaer h1 {
   font-weight: 600;
   font-size: 3.6rem;
 }
-main .sec-1 .text-container .initial-wrppaer span {
+main .sec-1 .text-container .title-wrppaer span {
   font-weight: 600;
   font-size: 2rem;
 }
@@ -183,6 +183,7 @@ main .sec-1 .bg-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  min-height: var(--minHeight--block-system);
 }
 
 .sec-2 {
@@ -234,6 +235,7 @@ main .sec-1 .bg-container img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  min-height: var(--minHeight--block-system);
 }
 .sec-3 .text-container {
   width: 100%;
@@ -247,21 +249,21 @@ main .sec-1 .bg-container img {
   padding: 14rem 0;
   max-width: var(--maxWidth-grid-system);
 }
-.sec-3 .text-container .initial-wrapper {
+.sec-3 .text-container .title-wrapper {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
-.sec-3 .text-container .initial-wrapper h3 {
+.sec-3 .text-container .title-wrapper h3 {
   font-weight: 600;
   font-size: 3.2rem;
   color: var(--primary-color);
 }
-.sec-3 .text-container .initial-wrapper h4 {
+.sec-3 .text-container .title-wrapper h4 {
   font-weight: 600;
   font-size: 2.8rem;
 }
-.sec-3 .text-container .initial-wrapper span {
+.sec-3 .text-container .title-wrapper span {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -338,4 +340,210 @@ main .sec-1 .bg-container img {
 .sec-3 .text-container .contents-container .visualboxes-wrapper .visualbox .visual-right span {
   font-weight: 500;
   font-size: 1.8rem;
+}
+
+.sec-4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: var(--minHeight--block-system);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(18, 18, 18);
+  color: var(--color-white);
+  box-sizing: border-box;
+  padding: 6rem 0;
+}
+.sec-4 .title {
+  width: 100%;
+  padding: var(--margin-grid-system);
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 3.2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.sec-4 .systems-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 100%;
+  padding: var(--margin-grid-system);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.sec-4 .systems-container .typo-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.sec-4 .systems-container .typo-box .sub-title {
+  padding: 10rem 0 2rem 0;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+.sec-4 .systems-container .typo-box .content-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+.sec-4 .systems-container .typo-box .content-box .text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.sec-4 .systems-container .typo-box .content-box .text-box .text-en {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+.sec-4 .systems-container .typo-box .content-box .text-box .text-kr {
+  font-weight: 600;
+  font-size: 6.4rem;
+}
+.sec-4 .systems-container .typo-box .content-box .text-ex-box {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.sec-4 .systems-container .typo-box .content-box .text-ex-box .text-ex-kr-box {
+  width: 34.6rem;
+  height: 23rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+.sec-4 .systems-container .typo-box .content-box .text-ex-box .text-ex-kr-box img {
+  width: 100%;
+  object-fit: cover;
+}
+.sec-4 .systems-container .typo-box .content-box .text-ex-box .text-ex-en-box {
+  width: 29.5rem;
+  height: 18.7rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+.sec-4 .systems-container .typo-box .content-box .text-ex-box .text-ex-en-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sec-4 .systems-container .color-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.sec-4 .systems-container .color-box .sub-title {
+  padding: 10rem 0 2rem 0;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+.sec-4 .systems-container .color-box .content-box {
+  width: 72rem;
+  height: 43.8rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 1.2rem;
+}
+.sec-4 .systems-container .color-box .content-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-5 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: var(--minHeight--block-system);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 18, 18);
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  gap: 2.4rem;
+  padding: 6rem 0;
+}
+.sec-5 .sub-title {
+  padding: 10rem 14rem 2rem 14rem;
+  width: 100%;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+.sec-5 .sum-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--margin-grid-system);
+}
+.sec-5 .sum-box .grid-items {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  white-space: nowrap;
+}
+.sec-5 .sum-box .grid-items .list-circle {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 72rem;
+  background-color: var(--color-white);
+}
+.sec-5 .sum-box .grid-items .grid-ex {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.sec-5 .grid-box {
+  width: 100%;
+  max-width: var(--maxWidth-grid-system);
+  height: 67.8rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 2.4rem;
+}
+.sec-5 .grid-box img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec-6 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: var(--minHeight--block-system);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec-6 h3 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  margin: var(--margin-grid-system);
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--color-white);
+}
+
+.sec-7 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: var(--minHeight--block-system);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
