@@ -1,5 +1,5 @@
 ## Redesigned JW Process Page
 
-#### From Lee geon gyu
+#### From Lee geon-gyu
 
 ##### Thanks for visit!
